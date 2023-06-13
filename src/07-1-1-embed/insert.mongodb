@@ -1,0 +1,17 @@
+use("platzi_store")
+db.users.insertOne({
+    email:'wilmerweap11@gmail.com',
+    password:'Wilmer123123132',
+    role:'admin',
+    social_Accounts:['twitter','facebook'],
+    address:{
+        street:'cra 23',
+        city:'Pasto',
+        zip:'11011'
+    },
+    shipping_address:{
+        street:'cra 32',
+        city:'Pasto',
+        zip:'12011'
+    }
+})

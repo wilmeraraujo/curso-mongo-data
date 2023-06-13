@@ -1,0 +1,18 @@
+//uno amuchos embebido
+use("platzi_store")
+db.orders.insertOne({
+    user_id: ObjectId('6487cacb97b7d73485a6915f'),
+    date: "2020-12-12",
+    items:[
+      {
+        name:'Camiseta',
+        price:120,
+        qty:1
+      },
+      {
+        name:'Pantalon',
+        price:200,
+        qty:2
+      }
+    ]
+  })

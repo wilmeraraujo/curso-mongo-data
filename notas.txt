@@ -1,0 +1,25 @@
+--7 validadndo strings => integridad de la informacion
+tipos de datos con bson
+https://www.mongodb.com/docs/manual/reference/bson-types/
+
+--8 validando enums, numbers y booleans
+
+--9 validad0 arrays y subdocumentos
+
+--10 expresion regular para contraseñas
+
+--11 validacion de datos tips
+
+--12 embeber vs referenciar
+
+--13 realcion 1 a 1 embebidas
+* si la relacion es 1 - 1 casi siempre es mejor que vaya embebido
+* el unico caso en que se aplique un arelacion 1 a 1 referenciadas es cuando
+    el documento supere el tamño de 16 mb
+
+--15 1 a n embebidos
+
+--16 1 a n referenciados
+
+--17 n a n por lo general este tipo de relacion es referenciada
+

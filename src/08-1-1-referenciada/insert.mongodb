@@ -1,0 +1,14 @@
+use("platzi_store")
+db.stores.insertOne({
+    storeId:'ST001',
+    name:"Wilmer Store",
+    address:"Cr 32",
+})
+db.stores_details.insertOne({
+    storeId:'ST001',
+    description:"texto texto texto",
+    manager:{
+        email:'wilmerweap11@gmail.com',
+        cellphone:'3154558776'
+    }
+})

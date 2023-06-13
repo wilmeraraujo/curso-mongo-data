@@ -1,0 +1,39 @@
+use("platzi_store")
+db.getCollectionInfos()//comando para ver lso schemas actuales de un a base mongo
+//actualizar schema
+db.runCommand({
+    collMod:'users',//nombre del schema
+    validator:{
+        $jsonSchema:{
+            bsonType: 'object',
+            required: ['email','password','role'],
+            additionalProperties: true,//para evitar que ingresen campos que no estan mecionados en nuestra coleccion
+            properties:{
+                name:{
+                    bsonType: 'string'
+                },
+                last_name:{
+                    bsonType: 'string'
+                },
+                email:{
+                    bsonType: 'string'
+                },
+                password:{
+                    bsonType: 'string',
+                    pattern: "^[A-Za-z0-9]{8,}$"
+                },
+                age:{
+                    bsonType: 'number',
+                    minimum: 18,
+                    maximum: 99
+                },
+                isSingle:{
+                    bsonType: 'bool'
+                },
+                role:{
+                    enum:['customer','seller','admin']
+                }
+            }
+        }
+    }
+})

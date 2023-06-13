@@ -1,0 +1,19 @@
+//uno amuchos embebido
+use("platzi_store")
+db.products.insertOne([
+  {
+    name:'product 4',
+    sizes:['L','M'],
+    price:12
+  },
+  {
+    name:'product 5',
+    sizes:['L'],
+    price:45
+  },
+  {
+    name:'product 6',
+    sizes:['M'],
+    price:90
+  }
+])

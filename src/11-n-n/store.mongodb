@@ -1,0 +1,17 @@
+//uno amuchos embebido
+use("platzi_store")
+db.stores.insertMany([
+  {
+    name:'store 1',
+    products_ids:[
+        ObjectId('6487e6c22ae50f570c8fb228'),
+        //ObjectId('6487e6c22ae50f570c8fb228')
+    ]
+  },
+  {
+    name:'store 2',
+    products_ids:[
+        ObjectId('6487e8eb0b7a1507aca11efe')
+    ]
+  }
+])
